@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs24 \cf0 1. File format
+\b0 \
+\'93logging date\'94_\'94course\'94_\'94additional_weight\'94_\'94cruising velocity\'94_\'94trial\'94.mat\
+\
+
+\b 2. Comments for the experiments\
+
+\b0 - Courses\
+A, B, C, and D. Please use road slope information. Please be careful that the IMU data in the mat files is incorrect!  \
+\
+- Weight\
+A EV + a driver + additional weight. The sum of a EV and a driver weight is 540 kg. Therefore, overall weight is the sum of 540 kg and \'93additional_weight\'94.\
+\
+- Driving profile\
+Acceleration, cruise driving and deceleration (hydraulic braking + regenerative braking).\
+\
+- Trials\
+We performed one trial for the slow cruising velocity and three trials for the high cruising velocities (more than 10 km/h).\
+\
+
+\b 3. Comments for the data\
+
+\b0 In a logging file, there are several matrices. Please use only matrices of Current, Timestamp_converted, Velocity, and Voltage.\
+\
+- Current value\
+The current to consume battery energy.\
+\
+- Timestamp_converted value\
+The time when the data is 
+\f1 monitored
+\f0  \
+\
+- Velocity value\
+This is the results of ABS speed sensor. This data has less ripple compared to previous measured 
+\f1 results
+\f0 .\
+\
+- Voltage value\
+The battery pack voltage. }
